@@ -1,16 +1,18 @@
 # whatsapp_clone
 
-A new Flutter project.
+A frontend clone of a well known social media app, whatsapp. 
 
-## Getting Started
+## How to run the app
 
-This project is a starting point for a Flutter application.
+<li>Donwload the app on your phone by <a href ="https://github.com/Darthwimp/WhatsApp-UI-clone/releases/download/beta/Whatsapp_UI_Clone.apk">clicking on this link</a></li>
+<li>install the app on your phone</li>
 
-A few resources to get you started if this is your first Flutter project:
+## Preview of the app
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<p align="center">
+  <img src="screenshots/Screenshot_20221109_191844.png" width="250" height="500" />
+</p>
+<p align="center">
+  <img src="screenshots/Screenshot_20221109_191850.png" width="250" height="500" />
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
