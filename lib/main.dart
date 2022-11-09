@@ -16,6 +16,7 @@ void main(List<String> args) {
       ),
       scaffoldBackgroundColor: primaryColor,
       primaryColor: primaryColor,
+      colorScheme: ColorScheme.fromSwatch().copyWith(secondary: newChat),
     ),
   ));
 }

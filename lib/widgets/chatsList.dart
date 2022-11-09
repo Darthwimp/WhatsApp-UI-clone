@@ -11,29 +11,34 @@ class Chats extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(top: 10),
       child: ListView.builder(
-        itemCount: info.length,
+        itemCount: chatsInfo.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(info[index]["name"].toString(), style: chatHead),
-            subtitle: Padding(
-              padding: EdgeInsets.only(top: 2),
-              child: Text(
-                info[index]['message'].toString(),
-                style: chatContent,
-                overflow: TextOverflow.ellipsis,
+          return InkWell(
+            onTap: (() {}),
+            child: ListTile(
+              title: Text(chatsInfo[index]["name"].toString(), style: chatHead),
+              subtitle: Padding(
+                padding: EdgeInsets.only(top: 2),
+                child: Text(
+                  chatsInfo[index]['message'].toString(),
+                  style: chatContent,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
-            ),
-            leading: CircleAvatar(
-                backgroundImage: AssetImage("assets/contact_image.jpg")),
-            trailing: Column(
-              children: [
-                Text(info[index]["time"].toString(),
-                    style: info[index]["type"].toString() == "new"
-                        ? newChatTime
-                        : oldChatTime),
-                SizedBox(height: 10),
-                info[index]["type"] == "new" ? newMessage(info[index]["number of news"].toString()) : SizedBox(height: 0),
-              ],
+              leading: CircleAvatar(
+                  backgroundImage: AssetImage("assets/contact_image.jpg")),
+              trailing: Column(
+                children: [
+                  Text(chatsInfo[index]["time"].toString(),
+                      style: chatsInfo[index]["type"].toString() == "new"
+                          ? newChatTime
+                          : oldChatTime),
+                  SizedBox(height: 10),
+                  chatsInfo[index]["type"] == "new"
+                      ? newMessage(chatsInfo[index]["number of news"].toString())
+                      : SizedBox(height: 0),
+                ],
+              ),
             ),
           );
         },

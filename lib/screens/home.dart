@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/style/styles.dart';
+import 'package:whatsapp_clone/widgets/callsList.dart';
 import 'package:whatsapp_clone/widgets/chatsList.dart';
+import 'package:whatsapp_clone/widgets/statusList.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -32,9 +34,17 @@ class _HomeState extends State<Home> {
         ),
         body: TabBarView(children: [
           Chats(),
-          Text("data"),
-          Text("data")
+          StatusList(),
+          Calls(),
         ]),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: const Icon(
+            Icons.comment,
+            size: 25,
+            color: Colors.white,
+          ),
+        ),
       ),
     );
   }
