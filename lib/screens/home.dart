@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/style/styles.dart';
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+class Home extends StatefulWidget {
+  const Home({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
+  State<Home> createState() => _HomeState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -16,10 +17,10 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text("WhatsApp"),
           centerTitle: false,
-          bottom: const TabBar(tabs: [
-            Text("CHATS"),
-            Text("STATUS"),
-            Text("CALLS"),
+          bottom: TabBar(tabs: [
+            Text("CHATS", style: head2,),
+            Text("STATUS", style: head2,),
+            Text("CALLS", style: head2,),
           ]),
         ),
       ),
