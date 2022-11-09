@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/style/styles.dart';
+import 'package:whatsapp_clone/widgets/chatsList.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -17,21 +18,24 @@ class _HomeState extends State<Home> {
         appBar: AppBar(
           title: const Text("WhatsApp"),
           centerTitle: false,
-          bottom: TabBar(indicatorColor: secondaryColor, tabs: [
-            Text("CHATS", style: head2),
-            Text("STATUS", style: head2),
-            Text("CALLS", style: head2),
-          ]),
+          elevation: 0,
+          bottom: TabBar(
+              indicatorWeight: 5,
+              indicatorColor: secondaryColor,
+              labelColor: secondaryColor,
+              unselectedLabelColor: fontColor1,
+              tabs: [
+                Text("CHATS", style: head2),
+                Text("STATUS", style: head2),
+                Text("CALLS", style: head2),
+              ]),
         ),
-        body: TabBarView(
-          children: [
-            Text("tab-1"),
-            Text("tab-2"),
-            Text("tab-3")
-          ]),
+        body: TabBarView(children: [
+          Chats(),
+          Text("data"),
+          Text("data")
+        ]),
       ),
     );
   }
 }
-
-

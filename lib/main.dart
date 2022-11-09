@@ -5,6 +5,7 @@ import 'package:whatsapp_clone/screens/splash_page.dart';
 import 'package:whatsapp_clone/style/styles.dart';
 
 void main(List<String> args) {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: Home(),

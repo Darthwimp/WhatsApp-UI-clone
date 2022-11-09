@@ -5,6 +5,7 @@ const info = [
     "time": "8:58",
     "type": "new",
     "mode": "recieved",
+    "number of news": "2",
   },
   {
     "name": "Gonna",
@@ -12,6 +13,7 @@ const info = [
     "time": "8:58",
     "type": "new",
     "mode": "recieved",
+    "number of news": "2",
   },
   {
     "name": "Give",
@@ -26,6 +28,7 @@ const info = [
     "time": "8:58",
     "type": "new",
     "mode": "recieved",
+    "number of news": "2",
   },
   {
     "name": "Up",
