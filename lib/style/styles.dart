@@ -22,12 +22,12 @@ Icon voiceCall = Icon(Icons.phone, color: secondaryColor, size: 35);
 
 Widget newMessage(String num) {
   return Container(
-    height: 20,
-    width: 20,
+    height: 22,
+    width: 22,
     child: Text(
       num,
       textAlign: TextAlign.center,
-      style: TextStyle(color: primaryColor),
+      style: TextStyle(color: primaryColor, fontSize: 17),
     ),
     decoration: BoxDecoration(
       color: newChat,

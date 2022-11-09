@@ -21,6 +21,10 @@ class _HomeState extends State<Home> {
           title: const Text("WhatsApp"),
           centerTitle: false,
           elevation: 0,
+          actions: [
+            IconButton(onPressed: () {}, icon: Icon(Icons.search, color: fontColor1,)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert, color: fontColor1,))
+          ],
           bottom: TabBar(
               indicatorWeight: 5,
               indicatorColor: secondaryColor,

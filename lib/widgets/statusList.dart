@@ -32,7 +32,7 @@ class StatusList extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Text("Recent Updates",
+            child: Text("No Recent Updates",
                 style: GoogleFonts.poppins(fontSize: 15, color: fontColor1)),
           )
         ],
