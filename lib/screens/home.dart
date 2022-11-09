@@ -17,13 +17,21 @@ class _HomeState extends State<Home> {
         appBar: AppBar(
           title: const Text("WhatsApp"),
           centerTitle: false,
-          bottom: TabBar(tabs: [
-            Text("CHATS", style: head2,),
-            Text("STATUS", style: head2,),
-            Text("CALLS", style: head2,),
+          bottom: TabBar(indicatorColor: secondaryColor, tabs: [
+            Text("CHATS", style: head2),
+            Text("STATUS", style: head2),
+            Text("CALLS", style: head2),
           ]),
         ),
+        body: TabBarView(
+          children: [
+            Text("tab-1"),
+            Text("tab-2"),
+            Text("tab-3")
+          ]),
       ),
     );
   }
 }
+
+
